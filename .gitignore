@@ -1,0 +1,178 @@
+# ==============================================================================
+# PLAYGROUND MONOREPO - MASTER .GITIGNORE
+# ==============================================================================
+
+# --- [Segurança & Credenciais] ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+id_rsa
+id_ecdsa
+id_ed25519
+*.pfx
+*.p12
+*.kdbx
+secrets/
+credentials.json
+*token*
+*.secret
+
+# --- [Ambientes Virtuais & Python] ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.installed.cfg
+*.egg
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+var/
+wheels/
+share/python-wheels/
+pip-wheel-metadata/
+
+# --- [Jupyter Notebooks] ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+.virtual_documents/
+
+# --- [Node.js & JavaScript/TypeScript] ---
+node_modules/
+jspm_packages/
+.npm/
+.yarn/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+.next/
+.nuxt/
+.svelte-kit/
+.turbo/
+
+# --- [C / C++ / Compilação & Binários] ---
+*.o
+*.obj
+*.out
+*.exe
+*.dll
+*.dylib
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.dSYM/
+compile_commands.json
+
+# --- [Rust & Go] ---
+target/
+Cargo.lock
+vendor/
+
+# --- [LaTeX & Documentos] ---
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.brf
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.xdv
+
+# --- [Dados Grandes, Modelos de ML & Bancos de Dados Locais] ---
+# Evita poluir o Git com arquivos gigantes acidentais.
+# Se precisar subir um CSV pequeno de exemplo, use: git add -f sample.csv
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
+*.sqlite3
+*.db
+*.dump
+
+# Arquivos compactados
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.iso
+
+# --- [IDEs & Editores] ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.vscode/*.log
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+
+# --- [Sistema Operacional] ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# --- [Logs e Temporários] ---
+logs/
+*.log
+tmp/
+temp/
+*.tmp
